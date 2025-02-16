@@ -137,6 +137,10 @@ size_t Day12Part1(const vector<vector<char>> &kGrid)
 
 size_t GetPerimeterPoints(const Region &region)
 {
+    /**
+     * Part 2: side/corner count method takn from
+     * https://www.reddit.com/r/adventofcode/comments/1hcdnk0/comment/m1nio0w/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+     */
     auto corners_count = size_t{ 0 };
     for (const auto &[x, y] : region)
     {
